@@ -1,647 +1,580 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-	crossorigin="anonymous">
-<script
-	src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
-<meta charset="ISO-8859-1">
-<link rel="stylesheet" href="Style.css">
-<title>Welcome Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="Style.css">
+    <title>Welcome Admin</title>
 </head>
+
 <body>
-
-	<!-- This code is for side-navigation bar -->
-	<nav class="navbar navbar-expand d-flex flex-column align-item-start"
-		id="sidebar">
-		<div class="container-fluid bg-primary justify-content-center"
-			style="position: relative; margin-top: -8px; height: 53px;">
-			<h3 class="font-weight-bold text-light mt-1 text-center">AdminLTE</h3>
-		</div>
-		<ul class="navbar-nav d-flex flex-column mt-5 w-100">
-			<li class="nav-item w-100 "><img src="image/vk.jpg" alt="Avatar"
-				class="avatar bg-light" style="margin-left: 10px;"><a
-				href="#profile"
-				style="color: #ffffff; text-decoration: none; margin-left: 10px;">Alexander
-					Pierce</a></li>
-
-			<li class="nav-item w-100 text-light" style="margin-left: 45px;"><i
-				class="fa-solid fa-circle" style="color: #22aa2b;"></i>Online</li>
-			<li class="nav-item dropdown w-100"><a href="#"
-				class="nav-link dropdown-toggle text-light pl-4" id="navbarDropdown"
-				role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
-				<ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-					<li><a href="#" class="dropdown-item text-light pl-4 p-2">Dashboard
-							1</a></li>
-					<li><a href="#" class="dropdown-item text-light pl-4 p-2">Dashboard
-							2</a></li>
-				</ul></li>
-			<li class="nav-item w-100"><a href="#"
-				class="nav-link text-light pl-4">Layout Options</a></li>
-			<li class="nav-item w-100"><a href="#"
-				class="nav-link text-light pl-4">Widget</a></li>
-			<li class="nav-item w-100"><a href="#"
-				class="nav-link text-light pl-4">Charts</a></li>
-			<li class="nav-item w-100"><a href="#"
-				class="nav-link text-light pl-4">UI Elements</a></li>
-		</ul>
-	</nav>
-
-	<!-- This code is for Navigation-bar -->
-	<div class="container-fluid-md navbar-primary bg-primary">
-		<div class="row">
-			<div class="col-1 bg-primary">
-				<section class="my-container bg-primary">
-					<button class="btn my-2 bg-primary" id="menu-btn">
-						<i class="fa-solid fa-bars"></i>
-					</button>
-				</section>
-			</div>
-			<div class="col-8"></div>
-			<div class="col-3" style="margin-top: 15px">
-				<a href="#email" style="margin-right: 12px"><i
-					class="fa-regular fa-envelope" style="color: #ffffff"></i></a> <a
-					href="#bell" style="margin-right: 12px"><i
-					class="fa-regular fa-bell" style="color: #ffffff"></i></a> <a
-					href="#flag" style="margin-right: 12px"><i
-					class="fa-regular fa-flag" style="color: #ffffff"></i></a> <img
-					src="image/vk.jpg" alt="Avatar" class="avatar bg-light"> <a
-					href="#profile"
-					style="color: #ffffff; text-decoration: none; margin-right: 12px">Alexander
-					Pierce</a> <a href="#setting" style="margin-right: 12px"><i
-					class="fa-solid fa-gear" style="color: #ffffff"></i></a>
-			</div>
-		</div>
-	</div>
-	<!-- This code is for Dashboard container -->
-	<div class="container-fluid bg-light float-end px-3 p-3">
-		<h3>Dashboard</h3>
-		<h5 class="text-black-50">version 2.0</h5>
-
-		<div class="container-fluid bg-light">
-			<div class="row gx-5">
-				<div class="col-md">
-					<div class="border bg-white">
-						<img alt="" src="image/setting.svg"
-							style="width: 100px; height: 100px;"><strong>CPU
-							TRAFFIC 90%</strong>
-					</div>
-				</div>
-
-				<div class="col-md">
-					<div class="border bg-white">
-						<img alt="" src="image/Capture.svg"
-							style="width: 100px; height: 100px;"><strong>
-							LIKES 41,410</strong>
-					</div>
-				</div>
-
-				<div class="col-md">
-					<div class="border bg-white">
-						<img alt="" src="image/cart.svg"
-							style="width: 100px; height: 100px;"><strong>
-							SALES 760</strong>
-					</div>
-				</div>
-
-				<div class="col-md">
-					<div class="border bg-white">
-						<img alt="" src="image/users.svg"
-							style="width: 100px; height: 100px;"><strong>NEW
-							MEMBERS 2,000</strong>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid p-5 bg-light float-end overflow-hidden"
-		style="column-gap: 1rem;">
-		<div class="row gx-5">
-			<!-- This code is for Direct chat -->
-			<div class="col-md-4 bg-light">
-				<div
-					class="direct-chat border-top border-4 rounded border-warning bg-white">
-					<div
-						class="container-fluid card-header d-inline-block align-items-center bg-white">
+   
+    <!-- This code is for side-navigation bar -->
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <div class="container-fluid bg-primary justify-content-center" style="position: relative; margin-top: -0.5rem; height: 3.313rem;">
+            <h3 class="font-weight-bold text-light mt-1 text-center">AdminLTE</h3>
+        </div>
+        <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+            <li class="nav-item w-100 "> 
+            	<img src="image/vk.jpg" alt="Avatar" class="avatar bg-light" style="margin-left: 0.625rem;"> 
+            		<a href="#profile" style="color: #ffffff; text-decoration: none; margin-left: 0.625rem;">Alexander Pierce</a> 
+            </li>
+            <li class="nav-item w-100 text-light" style="margin-left: 2.813rem;"> 
+            	<i class="fa-solid fa-circle" style="color: #22aa2b;"></i>Online 
+            </li>
+            <li class="nav-item dropdown w-100">
+            	<a href="#" class="nav-link dropdown-toggle text-light pl-4" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                    <li> <a href="#" class="dropdown-item text-light pl-4 p-2">Dashboard 1</a> </li>
+                    <li> <a href="#" class="dropdown-item text-light pl-4 p-2">Dashboard 2</a> </li>
+                </ul>
+            </li>
+            <li class="nav-item w-100"> <a href="#" class="nav-link text-light pl-4">Layout Options</a> </li>
+            <li class="nav-item w-100"> <a href="#" class="nav-link text-light pl-4">Widget</a> </li>
+            <li class="nav-item w-100"> <a href="#" class="nav-link text-light pl-4">Charts</a> </li>
+            <li class="nav-item w-100"> <a href="#" class="nav-link text-light pl-4">UI Elements</a> </li>
+        </ul>
+    </nav> 
+    
+    <!-- This code is for Navigation-bar -->
+    <div class="container-fluid-md navbar-primary bg-primary">
+        <div class="row">
+            <div class="col-1 bg-primary">
+                <section class="my-container bg-primary"> <button class="btn my-2 bg-primary" id="menu-btn"> <i class="fa-solid fa-bars"></i> </button> </section>
+            </div>
+            <div class="col-8"></div>
+            <div class="col-3" style="margin-top: 0.938rem"> 
+            	<a href="#email" style="margin-right: 0.75rem">
+            		<i class="fa-regular fa-envelope" style="color: #ffffff"></i>
+            	</a> 
+            	<a href="#bell" style="margin-right: 0.75rem">
+            		<i class="fa-regular fa-bell" style="color: #ffffff"></i>
+            	</a> 
+            	<a href="#flag" style="margin-right: 0.75rem">
+            		<i class="fa-regular fa-flag" style="color: #ffffff"></i>
+            	</a> 
+            	<img src="image/vk.jpg" alt="Avatar" class="avatar bg-light"> 
+            	<a href="#profile" style="color: #ffffff; text-decoration: none; margin-right: 0.75rem">Alexander Pierce</a> 
+            	<a href="#setting" style="margin-right: 0.75rem">
+            		<i class="fa-solid fa-gear" style="color: #ffffff"></i>
+            	</a> 
+            </div>
+        </div>
+    </div> 
+    
+    <!-- This code is for Dashboard container -->
+    <div class="container-fluid bg-light float-end px-3 p-3">
+        <h3>Dashboard</h3>
+        <h5 class="text-black-50">version 2.0</h5>
+        <div class="container-fluid bg-light">
+            <div class="row gx-5">
+                <div class="col-md">
+                    <div class="border bg-white"> 
+                    	<img alt="" src="image/setting.svg" style="width: 6.25rem; height: 6.25rem;">
+                    	<strong>CPU TRAFFIC 90%</strong> 
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="border bg-white"> 
+                    	<img alt="" src="image/Capture.svg" style="width: 6.25rem; height: 6.25rem;">
+                    	<strong> LIKES 41,410</strong> 
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="border bg-white"> 
+                    	<img alt="" src="image/cart.svg" style="width: 6.25rem; height: 6.25rem;">
+                    	<strong> SALES 760</strong> 
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="border bg-white"> 
+                    	<img alt="" src="image/users.svg" style="width: 6.25rem; height: 6.25rem;">
+                   	 	<strong>NEW MEMBERS 2,000</strong> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid p-5 bg-light float-end overflow-hidden" style="column-gap: 1rem;">
+        <div class="row gx-5">
+            <!-- This code is for Direct chat -->
+            <div class="col-md-4 bg-light">
+                <div class="direct-chat border-top border-4 rounded border-warning bg-white">
+					<div class="container-fluid card-header d-inline-block align-items-center bg-white">
 						<strong>Direct Chat</strong>
-						<button type="button" class="btn btn-tool float-end"
-							data-widget="remove">
+						<button type="button" class="btn btn-tool float-end" data-widget="remove">
 							<i class="fas fa-times"></i>
 						</button>
-
-						<button type="button" class="btn btn-tool float-end"
-							data-toggle="tooltip" title="Contacts"
-							data-widget="chat-pane-toggle">
+						<button type="button" class="btn btn-tool float-end" data-toggle="tooltip" title="Contacts" data-widget="chat-pane-toggle">
 							<i class="fas fa-comments"></i>
 						</button>
-						<button type="button" class="btn btn-tool float-end"
-							data-widget="collapse">
+						<button type="button" class="btn btn-tool float-end" data-widget="collapse">
 							<i class="fas fa-minus"></i>
 						</button>
-						<span
-							class="badge rounded-pill bg-warning d-flex align-items-center justify-content-center float-end"><strong>3</strong></span>
-
+						<span class="badge rounded-pill bg-warning d-flex align-items-center justify-content-center float-end"><strong>3</strong></span>
 					</div>
 					<div class="card-body">
-						<div class="direct-chat-messages overflow-auto"
-							style="max-height: 250px">
-							<div class="direct-chat-msg">
-								<div class="direct-chat-infos clearfix">
-									<span class="direct-chat-name float-left"><strong>Alexander
-											Pierce</strong></span>
-								</div>
-								<img class="direct-chat-img rounded-circle"
-									style="width: 40px; height: 40px" src="image/vk.jpg"
-									alt="message user image"> <span
-									style="font-size: 20px; padding-right: 100px;"
-									class="bg-primary rounded">Is this template really for
-									free?</span><br> <span class="direct-chat-timestamp float-right">23
-									Jan 2:00 pm</span>
-							</div>
-							<br>
-							<div class="direct-chat-msg right">
-								<div class="direct-chat-infos clearfix">
-									<span class="direct-chat-name float-end"><strong>Sarah
-											Bullock</strong></span>
-
-								</div>
-								<img class="direct-chat-img float-end rounded-circle"
-									style="width: 40px; height: 40px" src="image/Norman.svg"
-									alt="message user image"> <span
-									style="font-size: 20px; padding-right: 190px;"
-									class="bg-warning rounded">You better believe it!</span><br>
-								<br> <span class="direct-chat-timestamp float-end">23
-									Jan 2:05 pm</span>
-							</div>
-							<br>
-							<div class="direct-chat-msg">
-								<div class="direct-chat-infos clearfix">
-									<span class="direct-chat-name float-left"><strong>Alexander
-											Pierce</strong></span>
-								</div>
-								<img class="direct-chat-img rounded-circle"
-									style="width: 40px; height: 40px" src="image/vk.jpg"
-									alt="message user image"> <span
-									style="font-size: 20px; padding-right: 100px;"
-									class="bg-light rounded">Working with AdminLTE on a
-									great new app!</span><br> <span
-									class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
-							</div>
-							<br>
-							<div class="direct-chat-msg right">
-								<div class="direct-chat-infos clearfix">
-									<span class="direct-chat-name float-end"><strong>Sarah
-											Bullock</strong></span>
-								</div>
-								<img class="direct-chat-img float-end rounded-circle"
-									style="width: 40px; height: 40px" src="image/Norman.svg"
-									alt="message user image"> <span
-									style="font-size: 20px; padding-right: 190px;"
-									class="bg-warning rounded">You better believe it!</span><br>
-								<br> <span class="direct-chat-timestamp float-end">23
-									Jan 6:10 pm</span>
-							</div>
-						</div>
-						<br>
-						<form action="#" method="post">
-							<div class="input-group-append d-flex">
-								<input type="text" name="message" placeholder="Type Message ..."
-									class="form-control">
-								<button type="button" class="btn btn-primary">Send</button>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-
-			<!-- This code is for Latest members -->
-			<div
-				class="col-md-4 bg-white border-top border-4 rounded border-danger"
-				style="height: 400px;">
-				<div class="container-fluid card-header d-inline-block bg-white">
-					<strong>Latest Members</strong>
-					<button type="button" class="btn btn-tool float-end"
-						data-widget="remove">
-						<i class="fas fa-times"></i>
-					</button>
-					<button type="button" class="btn btn-tool float-end"
-						data-widget="collapse">
-						<i class="fas fa-minus"></i>
-					</button>
-					<span class="badge bg-danger">8 New Members</span>
-				</div>
-				<div class="row mt-3">
-					<div class="col-md-3">
-						<img alt="" src="image/namo.svg" class="rounded-circle"
-							style="height: 100px; width: 100px;">
-						<dl>
-							<dt class="text-center">Alexender...</dt>
-							<dd class="text-black-50 text-center">Today</dd>
-						</dl>
-						<br> <img alt="" src="image/alexander.svg"
-							class="rounded-circle"
-							style="height: 100px; width: 100px; margin-top: -10px;">
-						<dl>
-							<dt class="text-center">Alexender</dt>
-							<dd class="text-black-50 text-center">13 Jan</dd>
-						</dl>
-					</div>
-
-					<div class="col-md-3">
-						<img alt="" src="image/Norman.svg" class="rounded-circle"
-							style="height: 100px; width: 100px;">
-						<dl>
-							<dt class="text-center">Norman</dt>
-							<dd class="text-black-50 text-center">Yesterday</dd>
-						</dl>
-						<br> <img alt="" src="image/Sarah.svg" class="rounded-circle"
-							style="height: 100px; width: 100px; margin-top: -10px;">
-						<dl>
-							<dt class="text-center">Sarah</dt>
-							<dd class="text-black-50 text-center">14 Jan</dd>
-						</dl>
-					</div>
-
-					<div class="col-md-3">
-						<img alt="" src="image/Jane.svg" class="rounded-circle"
-							style="height: 100px; width: 100px;">
-						<dl>
-							<dt class="text-center">Jane</dt>
-							<dd class="text-black-50 text-center">12 Jan</dd>
-						</dl>
-						<br> <img alt="" src="image/Nora.svg" class="rounded-circle"
-							style="height: 100px; width: 100px; margin-top: -10px;">
-						<dl>
-							<dt class="text-center">Nora</dt>
-							<dd class="text-black-50 text-center">15 Jan</dd>
-						</dl>
-					</div>
-
-					<div class="col-md-3">
-						<img alt="" src="image/john.svg" class="rounded-circle"
-							style="height: 100px; width: 100px;">
-						<dl>
-							<dt class="text-center">John</dt>
-							<dd class="text-black-50 text-center">12 jan</dd>
-						</dl>
-						<br> <img alt="" src="image/Nadia.svg" class="rounded-circle"
-							style="height: 100px; width: 100px; margin-top: -10px;">
-						<dl>
-							<dt class="text-center">Nadia</dt>
-							<dd class="text-black-50 text-center">15 jan</dd>
-						</dl>
-					</div>					
-				</div>				
-			</div>
-
-			<!-- This code is for progress bar -->
-			<div class="col-md-4 bg-light">
-				<div class="bg-white border-top border-4 border-dark">
-					<div class="pb">
-						<div class="card-header bg-white justify-content-center"
-							style="height: 60px;">
-							<strong class="text-black d-flex justify-content-center">Goal
-								Completion</strong>
-						</div>
-
-						<label><strong class="text-black">Add Product To
-								Cart</strong></label> <label class="float-end"><strong>160/200</strong> </label>
-						<div class="progress">
-							<div class="progress-bar bg-primary" style="width: 70%"></div>
-						</div>
-						<br> <br> <label><strong class="text-black">Complete
-								Purchase</strong></label> <label class="float-end"><strong>310/400</strong>
-						</label>
-						<div class="progress">
-							<div class="progress-bar bg-danger" style="width: 70%"></div>
-						</div>
-						<br> <br> <label><strong class="text-black">Visit
-								Premium Page </strong></label> <label class="float-end"><strong>480/800</strong>
-						</label>
-						<div class="progress">
-							<div class="progress-bar bg-success" style="width: 70%"></div>
-						</div>
-						<br> <br> <label><strong class="text-black">Send
-								Inquires</strong></label> <label class="float-end"><strong>250/500</strong>
-						</label>
-						<div class="progress">
-							<div class="progress-bar bg-warning" style="width: 70%"></div>
-						</div>
-						<div class="card-footer bg-white" style="height: 33px;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid px-3 p-3 bg-light float-end row ">
-		<!-- This code is for table -->
-		<div class="col-md-8">
-			<div
-				class="container mt-3 bg-white border-top border-4 rounded border-primary"
-				style="height: 470px;">
-
-				<table class="table ">
-					<thead>
-						<tr>
-							<td colspan="3"><h2>Latest Orders</h2></td>
-							<td align="right">
-								<button type="button" class="btn btn-box-tool"
-									data-widget="collapse">
-									<i class="fa-solid fa-minus fa-sm"></i>
-								</button>
-								<button type="button" class="btn btn-box-tool"
-									data-widget="remove">
-									<i class="fa-solid fa-times fa-sm"></i>
-								</button>
-							</td>
-						</tr>
-						<tr>
-							<th>Order_Id</th>
-							<th>Item</th>
-							<th>Status</th>
-							<th>Popularity</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="text-primary">OR9824</td>
-							<td>Call of Duty IV</td>
-							<td><kbd class="bg-success">Shipped</kbd></td>
-							<td><i class="fa-solid fa-chart-simple fa-2xl"
-								style="color: #0fe600;"></i><i
-								class="fa-solid fa-chart-simple fa-2xl" style="color: #0fe600;"></i></td>
-						</tr>
-
-						<tr>
-							<td class="text-primary">OR1848</td>
-							<td>Samsung Smart TV</td>
-							<td><kbd class="bg-warning">Pending</kbd></td>
-							<td><i class="fa-solid fa-chart-simple fa-2xl"
-								style="color: #ff8800;"></i><i
-								class="fa-solid fa-chart-simple fa-2xl" style="color: #ff8800;"></i></td>
-						</tr>
-
-						<tr>
-							<td class="text-primary">OR7429</td>
-							<td>iphone 6 Plus</td>
-							<td><kbd class="bg-danger">Delivered</kbd></td>
-							<td><i class="fa-solid fa-chart-simple fa-2xl"
-								style="color: #ff0000;"></i><i
-								class="fa-solid fa-chart-simple fa-2xl" style="color: #ff0000;"></i></td>
-						</tr>
-
-						<tr>
-							<td class="text-primary">OR7429</td>
-							<td>Samsung Smart TV</td>
-							<td><kbd class="bg-primary">Processing</kbd></td>
-							<td><i class="fa-solid fa-chart-simple fa-2xl"
-								style="color: #74C0FC;"></i><i
-								class="fa-solid fa-chart-simple fa-2xl" style="color: #74C0FC;"></i></td>
-						</tr>
-
-						<tr>
-							<td class="text-primary">OR1848</td>
-							<td>Samsung Smart TV</td>
-							<td><kbd class="bg-warning">Pending</kbd></td>
-							<td><i class="fa-solid fa-chart-simple fa-2xl"
-								style="color: #ff8800;"></i><i
-								class="fa-solid fa-chart-simple fa-2xl" style="color: #ff8800;"></i></td>
-						</tr>
-
-						<tr>
-							<td class="text-primary">OR7429</td>
-							<td>iphone 6 Plus</td>
-							<td><kbd class="bg-danger">Delivered</kbd></td>
-							<td><i class="fa-solid fa-chart-simple fa-2xl"
-								style="color: #ff0000;"></i><i
-								class="fa-solid fa-chart-simple fa-2xl" style="color: #ff0000;"></i></td>
-						</tr>
-
-						<tr>
-							<td class="text-primary">OR9824</td>
-							<td>Call of Duty IV</td>
-							<td><kbd class="bg-success">Shipped</kbd></td>
-							<td><i class="fa-solid fa-chart-simple fa-2xl"
-								style="color: #74C0FC;"></i><i
-								class="fa-solid fa-chart-simple fa-2xl" style="color: #74C0FC;"></i></td>
-						</tr>
-
-						<tr>
-							<td colspan="3"><button class="btn-primary float-start"
-									type="button">Place New Order</button></td>
-
-							<td align="right">
-								<button class="btn-light float-end" type="button">View
-									All Orders</button>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-
-		<!-- This code is for cards -->
-		<div class="col-md-4">
-			<div class="contaier mt-3 bg-light">
-
-				<div class="row gx-1 bg-warning">
-					<div class="col-3">
-						<div
-							class="border bg-orange-600 d-flex align-items-center justify-content-center float-start"
-							style="height: 100px; width: 120px;">
-							<i
-								class="fa-solid fa-tag fa-flip-horizontal fa-2xl bg-$orange-600"
-								style="color: black;"></i>
-						</div>
-					</div>
-					<div class="col-9">
-						<h6 class="text-white">INVENTORY</h6>
-						<h5>
-							<strong class="text-white">5,200</strong>
-						</h5>
-						<div class="progress bg-dark" style="height: 5px">
-							<div class="progress-bar bg-white" style="width: 50%"></div>
-						</div>
-						<h6 class="text-white mt-2">50% Increase in 30 Days</h6>
-					</div>
-				</div>
-
-				<br>
-				<div class="row gx-1 bg-success">
-					<div class="col-md-3">
-						<div
-							class="border bg-$orange-600 d-flex align-items-center justify-content-center"
-							style="height: 100px; width: 120px;">
-							<i class="fa-regular fa-heart fa-2xl" style="color: #ffffff;"></i>
-						</div>
-					</div>
-					<div class="col-md-9">
-						<h6 class="text-white">MENTIONS</h6>
-						<h5>
-							<strong class="text-white">92,050</strong>
-						</h5>
-						<div class="progress bg-dark" style="height: 5px">
-							<div class="progress-bar bg-white" style="width: 20%"></div>
-						</div>
-						<h6 class="text-white mt-2">20% Increase in 30 Days</h6>
-					</div>
-				</div>
-				<br>
-				<div class="row gx-1 bg-danger">
-					<div class="col-md-3">
-						<div
-							class="border bg-$orange-600 d-flex align-items-center justify-content-center"
-							style="height: 100px; width: 120px;">
-							<i class="fa-solid fa-cloud-arrow-down fa-2xl"
-								style="color: #f5f7fa;"></i>
-						</div>
-					</div>
-					<div class="col-md-9">
-						<h6 class="text-white">DOWNLOADS</h6>
-						<h5>
-							<strong class="text-white">114,381</strong>
-						</h5>
-						<div class="progress bg-dark" style="height: 5px">
-							<div class="progress-bar bg-white" style="width: 70%"></div>
-						</div>
-						<h6 class="text-white mt-2">70% Increase in 30 Days</h6>
-					</div>
-				</div>
-				<br>
-				<div class="row gx-1 bg-primary">
-					<div class="col-md-3">
-						<div
-							class="border bg-$orange-600 d-flex align-items-center justify-content-center"
-							style="height: 100px; width: 120px;">
-							<i class="fa-regular fa-comment fa-2xl" style="color: #fafafa;"></i>
-						</div>
-					</div>
-					<div class="col-md-9">
-						<h6 class="text-white">DIRECT MESSAGES</h6>
-						<h5>
-							<strong class="text-white">163,921</strong>
-						</h5>
-						<div class="progress bg-dark" style="height: 5px">
-							<div class="progress-bar bg-white" style="width: 40%"></div>
-						</div>
-						<h6 class="text-white mt-2">40% Increase in 30 Days</h6>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- This code is for Doughnut chart -->
-	<div class="container-fluid px-3 p-3 bg-light float-end row">
-		<div class="col-md-4 border bg-white">
-			<div class="row">
-				<div class="col-md-8 ">
-					<canvas id="chartjs-doughnut"></canvas>
-				</div>
-				<div class="col-md-4"></div>
-			</div>
-		</div>
-		<div class="col-md-4"></div>
-
-		<!-- This code is for recently added product -->
-		<div class="col-md-4">
-			<div
-				class="container mt-3 bg-white border-top border-4 rounded border-primary">
-				<table class="table">
-					<tr>
-						<td colspan="2"><h4>Recently Added Products</h4></td>
-						<td>
-							<button type="button" class="btn btn-box-tool">
-								<i class="fa-solid fa-minus fa-sm"></i>
-							</button>
-							<button type="button" class="btn btn-box-tool">
-								<i class="fa-solid fa-times fa-sm"></i>
-							</button>
-						</td>
-
-					</tr>
-
-					<tr>
-						<td align="center" style="vertical-align: middle;"><i
-							class="fa-sharp fa-regular fa-image fa-2xl"></i></td>
-						<td><dl>
-								<dt class="text-primary">Samsung TV</dt>
-								<dd class="text-black-50">Samsung 32" 1080p 60Hz LED ....</dd>
-							</dl></td>
-						<td align="center" style="vertical-align: middle;"><span
-							class="badge bg-warning">$1800</span></td>
-					</tr>
-
-					<tr>
-						<td align="center" style="vertical-align: middle;"><i
-							class="fa-sharp fa-regular fa-image fa-2xl"></i></td>
-						<td><dl>
-								<dt class="text-primary">Bicycle</dt>
-								<dd class="text-black-50">26" Mangoos Dolomite Men's...</dd>
-							</dl></td>
-						<td align="center" style="vertical-align: middle;"><span
-							class="badge bg-primary">$700</span></td>
-					</tr>
-
-					<tr>
-						<td align="center" style="vertical-align: middle;"><i
-							class="fa-sharp fa-regular fa-image fa-2xl"></i></td>
-						<td><dl>
-								<dt class="text-primary">Xbox One</dt>
-								<dd class="text-black-50">Xbox One Console Blundel
-									with......</dd>
-							</dl></td>
-						<td align="center" style="vertical-align: middle;"><span
-							class="badge bg-danger">$1800</span></td>
-					</tr>
-
-					<tr>
-						<td align="center" style="vertical-align: middle;"><i
-							class="fa-sharp fa-regular fa-image fa-2xl"></i></td>
-						<td><dl>
-								<dt class="text-primary">PlayStation 4</dt>
-								<dd class="text-black-50">PlayStation 4 500GB Console(PS4)</dd>
-							</dl></td>
-						<td align="center" style="vertical-align: middle;"><span
-							class="badge bg-success">$1800</span></td>
-					</tr>
-
-					<tr>
-						<td colspan="3" align="center"><a href="#">View All
-								Products</a></td>
-					</tr>
-				</table>
-			</div>
-		</div>
-	</div>
-
-	<!-- Side-navigation script -->
-	<script>
-     var menu_btn = document.querySelector("#menu-btn")
-     var sidebar = document.querySelector("#sidebar")
-     var container = document.querySelector(".my-container")
-     menu_btn.addEventListener("click", () => {
-         sidebar.classList.toggle("active-nav")
-         container.classList.toggle("active-cont")
-     });
-     
-     document.addEventListener("click", (event) => {
-         if (!sidebar.contains(event.target) && !menu_btn.contains(event.target)) {
-             if (sidebar.classList.contains("active-nav")) {
-                 sidebar.classList.remove("active-nav");
-                 container.classList.remove("active-cont");
-             }
-         }
-     });
-</script>
-
-	<script>
+                        <div class="direct-chat-messages overflow-auto" style="max-height: 15.625rem">
+                            <div class="direct-chat-msg">
+                                <div class="direct-chat-infos clearfix"> 
+                                	<span class="direct-chat-name float-left">
+                               	 		<strong>Alexander Pierce</strong>
+                                	</span>
+                                </div> 
+                                 <img class="direct-chat-img rounded-circle" style="width: 2.5rem; height: 2.5rem" src="image/vk.jpg" alt="message user image"> 
+                                 <span style="font-size: 1.25rem; padding-right: 6.25rem;" class="bg-primary rounded">Is this template really for free?</span>
+                                 <br> 
+                                 <span class="direct-chat-timestamp float-right">23 Jan 2:00 pm</span>
+                            </div> 
+                            <br>
+                            <div class="direct-chat-msg right">
+                                <div class="direct-chat-infos clearfix"> 
+                                	<span class="direct-chat-name float-end">
+                                		<strong>Sarah Bullock</strong>
+                                	</span> 
+                                </div> 
+                                <img class="direct-chat-img float-end rounded-circle" style="width: 2.5rem; height: 2.5rem" src="image/Norman.svg" alt="message user image"> 
+                                <span style="font-size: 1.25rem; padding-right: 11.875rem;" class="bg-warning rounded">You better believe it!</span>
+                                <br> 
+                                <br> 
+                                <span class="direct-chat-timestamp float-end">23 Jan 2:05 pm</span>
+                            </div> 
+                            <br>
+                            <div class="direct-chat-msg">
+                                <div class="direct-chat-infos clearfix"> 
+	                                <span class="direct-chat-name float-left">
+	                                	<strong>Alexander Pierce</strong>
+	                                </span> 
+                                </div> 
+                                <img class="direct-chat-img rounded-circle" style="width: 2.5rem; height: 2.5rem" src="image/vk.jpg" alt="message user image"> 
+                                <span style="font-size: 1.25rem; padding-right: 6.25rem;" class="bg-light rounded">Working with AdminLTE on a great new app!</span>
+                                <br> 
+                                <span class="direct-chat-timestamp float-right">23 Jan 5:37 pm</span>
+                            </div> 
+                            <br>
+                            <div class="direct-chat-msg right">
+                                <div class="direct-chat-infos clearfix"> 
+                                	<span class="direct-chat-name float-end">
+                                		<strong>Sarah Bullock</strong>
+                                	</span>
+                                </div> 
+                                <img class="direct-chat-img float-end rounded-circle" style="width: 2.5rem; height: 2.5rem;" src="image/Norman.svg" alt="message user image"> 
+                                <span style="font-size: 1.25rem; padding-right: 11.875rem;" class="bg-warning rounded">You better believe it!</span>
+                                <br> 
+                                <br> 
+                                <span class="direct-chat-timestamp float-end">23 Jan 6:10 pm</span>
+                            </div>
+                        </div> 
+                        <br>
+                        <form action="#" method="post">
+                            <div class="input-group-append d-flex"> 
+                            	<input type="text" name="message" placeholder="Type Message ..." class="form-control"> 
+                            	<button type="button" class="btn btn-primary">Send</button> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+            
+            <!-- This code is for Latest members -->
+            <div class="col-md-4 bg-white border-top border-4 rounded border-danger" style="height: 25rem;">
+                <div class="container-fluid card-header d-inline-block bg-white"> <strong>Latest Members</strong> <button type="button" class="btn btn-tool float-end" data-widget="remove"> <i class="fas fa-times"></i> </button> <button type="button" class="btn btn-tool float-end" data-widget="collapse"> <i class="fas fa-minus"></i> </button> <span class="badge bg-danger">8 New Members</span> </div>
+                <div class="row mt-3">
+                    <div class="col-md-3"> 
+                    	<img alt="" src="image/namo.svg" class="rounded-circle" style="height: 6.25rem; width: 6.25rem;">
+                        <dl>
+                            <dt class="text-center">Alexender...</dt>
+                            <dd class="text-black-50 text-center">Today</dd>
+                        </dl> 
+                        <br> 
+                        <img alt="" src="image/alexander.svg" class="rounded-circle" style="height: 6.25rem; width: 6.25rem; margin-top: -0.625rem;">
+                        <dl>
+                            <dt class="text-center">Alexender</dt>
+                            <dd class="text-black-50 text-center">13 Jan</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-3"> 
+                    	<img alt="" src="image/Norman.svg" class="rounded-circle" style="height: 6.25rem; width: 6.25rem;">
+                        <dl>
+                            <dt class="text-center">Norman</dt>
+                            <dd class="text-black-50 text-center">Yesterday</dd>
+                        </dl> 
+                        <br> 
+                        <img alt="" src="image/Sarah.svg" class="rounded-circle" style="height: 6.25rem; width: 6.25rem; margin-top: -0.625rem;">
+                        <dl>
+                            <dt class="text-center">Sarah</dt>
+                            <dd class="text-black-50 text-center">14 Jan</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-3"> 
+                    	<img alt="" src="image/Jane.svg" class="rounded-circle" style="height: 6.25rem; width: 6.25rem;">
+                        <dl>
+                            <dt class="text-center">Jane</dt>
+                            <dd class="text-black-50 text-center">12 Jan</dd>
+                        </dl> 
+                        <br> 
+                        <img alt="" src="image/Nora.svg" class="rounded-circle" style="height: 6.25rem; width: 6.25rem; margin-top: -0.625 rem;">
+                        <dl>
+                            <dt class="text-center">Nora</dt>
+                            <dd class="text-black-50 text-center">15 Jan</dd>
+                        </dl>
+                    </div>
+                    <div class="col-md-3"> 
+                    	<img alt="" src="image/john.svg" class="rounded-circle" style="height: 6.25rem; width: 6.25rem;">
+                        <dl>
+                            <dt class="text-center">John</dt>
+                            <dd class="text-black-50 text-center">12 jan</dd>
+                        </dl>
+                         <br> 
+                        <img alt="" src="image/Nadia.svg" class="rounded-circle" style="height: 6.25rem; width: 6.25rem; margin-top: -0.625rem;">
+                        <dl>
+                            <dt class="text-center">Nadia</dt>
+                            <dd class="text-black-50 text-center">15 jan</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div> 
+            
+            <!-- This code is for progress bar -->
+            <div class="col-md-4 bg-light">
+                <div class="bg-white border-top border-4 border-dark">
+                    <div class="pb">
+                        <div class="card-header bg-white justify-content-center" style="height: 3.75rem;"> 
+                        	<strong class="text-black d-flex justify-content-center">Goal Completion</strong> 
+                        </div> 
+                        <label>
+                        	<strong class="text-black">Add Product To Cart</strong>
+                        </label> 
+                        <label class="float-end">
+                        	<strong>160/200</strong> 
+                        </label>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 70%"></div>
+                        </div> 
+                        <br> <br> 
+                        <label>
+                        	<strong class="text-black">Complete Purchase</strong>
+                        </label> 
+                        <label class="float-end">
+                        	<strong>310/400</strong> 
+                        </label>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" style="width: 70%"></div>
+                        </div> 
+                        <br> <br> 
+                        <label>
+                        	<strong class="text-black">Visit Premium Page </strong>
+                        </label> 
+                        <label class="float-end">
+                        	<strong>480/800</strong> 
+                        </label>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 70%"></div>
+                        </div> 
+                        <br> <br> 
+                        <label>
+                        	<strong class="text-black">Send Inquires</strong>
+                        </label> 
+                        <label class="float-end">
+                        	<strong>250/500</strong> 
+                        </label>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" style="width: 70%"></div>
+                        </div>
+                        <div class="card-footer bg-white" style="height: 2.063rem;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid px-3 p-3 bg-light float-end row ">
+        <!-- This code is for table -->
+        <div class="col-md-8">
+            <div class="container mt-3 bg-white border-top border-4 rounded border-primary" style="height: 29.375rem;">
+                <table class="table ">
+                    <thead>
+                        <tr>
+                            <td colspan="3">
+                                <h2>Latest Orders</h2>
+                            </td>
+                            <td align="right"> 
+                            	<button type="button" class="btn btn-box-tool" data-widget="collapse"> 
+                            		<i class="fa-solid fa-minus fa-sm"></i> 
+                           		</button> 
+                           		<button type="button" class="btn btn-box-tool" data-widget="remove"> 
+                           			<i class="fa-solid fa-times fa-sm"></i> 
+                           		</button> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Order_Id</th>
+                            <th>Item</th>
+                            <th>Status</th>
+                            <th>Popularity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-primary">OR9824</td>
+                            <td>Call of Duty IV</td>
+                            <td><kbd class="bg-success">Shipped</kbd></td>
+                            <td>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #0fe600;"></i>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #0fe600;"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">OR1848</td>
+                            <td>Samsung Smart TV</td>
+                            <td><kbd class="bg-warning">Pending</kbd></td>
+                            <td>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #ff8800;"></i>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #ff8800;"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">OR7429</td>
+                            <td>iphone 6 Plus</td>
+                            <td><kbd class="bg-danger">Delivered</kbd></td>
+                            <td>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #ff0000;"></i>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #ff0000;"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">OR7429</td>
+                            <td>Samsung Smart TV</td>
+                            <td><kbd class="bg-primary">Processing</kbd></td>
+                            <td>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #74C0FC;"></i>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #74C0FC;"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">OR1848</td>
+                            <td>Samsung Smart TV</td>
+                            <td><kbd class="bg-warning">Pending</kbd></td>
+                            <td>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #ff8800;"></i>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #ff8800;"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">OR7429</td>
+                            <td>iphone 6 Plus</td>
+                            <td><kbd class="bg-danger">Delivered</kbd></td>
+                            <td>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #ff0000;"></i>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #ff0000;"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-primary">OR9824</td>
+                            <td>Call of Duty IV</td>
+                            <td><kbd class="bg-success">Shipped</kbd></td>
+                            <td>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #74C0FC;"></i>
+                            	<i class="fa-solid fa-chart-simple fa-2xl" style="color: #74C0FC;"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                            	<button class="btn-primary float-start" type="button">Place New Order</button>
+                            </td>
+                            <td align="right"> 
+                            	<button class="btn-light float-end" type="button">View All Orders</button> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+        
+        <!-- This code is for cards -->
+        <div class="col-md-4">
+            <div class="contaier mt-3 bg-light">
+                <div class="row gx-1 bg-warning">
+                    <div class="col-3">
+                        <div class="border bg-orange-600 d-flex align-items-center justify-content-center float-start" style="height: 6.25rem; width: 7.5rem;"> 
+                        	<i class="fa-solid fa-tag fa-flip-horizontal fa-2xl bg-$orange-600" style="color: black;"></i> 
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <h6 class="text-white">INVENTORY</h6>
+                        <h5> <strong class="text-white">5,200</strong> </h5>
+                        <div class="progress bg-dark" style="height: 0.313rem">
+                            <div class="progress-bar bg-white" style="width: 50%"></div>
+                        </div>
+                        <h6 class="text-white mt-2">50% Increase in 30 Days</h6>
+                    </div>
+                </div> 
+                <br>
+                <div class="row gx-1 bg-success">
+                    <div class="col-md-3">
+                        <div class="border bg-$orange-600 d-flex align-items-center justify-content-center" style="height: 6.25rem; width: 7.5rem;"> <i class="fa-regular fa-heart fa-2xl" style="color: #ffffff;"></i> </div>
+                    </div>
+                    <div class="col-md-9">
+                        <h6 class="text-white">MENTIONS</h6>
+                        <h5> <strong class="text-white">92,050</strong> </h5>
+                        <div class="progress bg-dark" style="height:  0.313rem">
+                            <div class="progress-bar bg-white" style="width: 20%"></div>
+                        </div>
+                        <h6 class="text-white mt-2">20% Increase in 30 Days</h6>
+                    </div>
+                </div> <br>
+                <div class="row gx-1 bg-danger">
+                    <div class="col-md-3">
+                        <div class="border bg-$orange-600 d-flex align-items-center justify-content-center" style="height: 6.25rem; width: 7.5rem;"> 
+                        	<i class="fa-solid fa-cloud-arrow-down fa-2xl" style="color: #f5f7fa;"></i> 
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <h6 class="text-white">DOWNLOADS</h6>
+                        <h5> <strong class="text-white">114,381</strong> </h5>
+                        <div class="progress bg-dark" style="height:  0.313rem">
+                            <div class="progress-bar bg-white" style="width: 70%"></div>
+                        </div>
+                        <h6 class="text-white mt-2">70% Increase in 30 Days</h6>
+                    </div>
+                </div> 
+                <br>
+                <div class="row gx-1 bg-primary">
+                    <div class="col-md-3">
+                        <div class="border bg-$orange-600 d-flex align-items-center justify-content-center" style="height: 6.25rem; width: 7.5rem;"> 
+                        	<i class="fa-regular fa-comment fa-2xl" style="color: #fafafa;"></i> 
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <h6 class="text-white">DIRECT MESSAGES</h6>
+                        <h5> <strong class="text-white">163,921</strong> </h5>
+                        <div class="progress bg-dark" style="height:  0.313rem">
+                            <div class="progress-bar bg-white" style="width: 40%"></div>
+                        </div>
+                        <h6 class="text-white mt-2">40% Increase in 30 Days</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <!-- This code is for Doughnut chart -->
+    <div class="container-fluid px-3 p-3 bg-light float-end row">
+        <div class="col-md-4 border bg-white">
+            <div class="row">
+                <div class="col-md-8 "> 
+                	<canvas id="chartjs-doughnut"></canvas> 
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <div class="col-md-4"></div> 
+        
+        <!-- This code is for recently added product -->
+        <div class="col-md-4">
+            <div class="container mt-3 bg-white border-top border-4 rounded border-primary">
+                <table class="table">
+                    <tr>
+                        <td colspan="2">
+                            <h4>Recently Added Products</h4>
+                        </td>
+                        <td> 
+                        	<button type="button" class="btn btn-box-tool"> 
+                        		<i class="fa-solid fa-minus fa-sm"></i> 
+                        	</button> 
+                        	<button type="button" class="btn btn-box-tool"> 
+                        		<i class="fa-solid fa-times fa-sm"></i> 
+                        	</button>
+                         </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="vertical-align: middle;">
+                        	<i class="fa-sharp fa-regular fa-image fa-2xl"></i>
+                        </td>
+                        <td>
+                            <dl>
+                                <dt class="text-primary">Samsung TV</dt>
+                                <dd class="text-black-50">Samsung 32" 1080p 60Hz LED ....</dd>
+                            </dl>
+                        </td>
+                        <td align="center" style="vertical-align: middle;">
+                        	<span class="badge bg-warning">$1800</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="vertical-align: middle;">
+                        	<i class="fa-sharp fa-regular fa-image fa-2xl"></i>
+                        </td>
+                        <td>
+                            <dl>
+                                <dt class="text-primary">Bicycle</dt>
+                                <dd class="text-black-50">26" Mangoos Dolomite Men's...</dd>
+                            </dl>
+                        </td>
+                        <td align="center" style="vertical-align: middle;">
+                        	<span class="badge bg-primary">$700</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="vertical-align: middle;">
+                        	<i class="fa-sharp fa-regular fa-image fa-2xl"></i>
+                        </td>
+                        <td>
+                            <dl>
+                                <dt class="text-primary">Xbox One</dt>
+                                <dd class="text-black-50">Xbox One Console Blundel with......</dd>
+                            </dl>
+                        </td>
+                        <td align="center" style="vertical-align: middle;">
+                        	<span class="badge bg-danger">$1800</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="vertical-align: middle;">
+                       		<i class="fa-sharp fa-regular fa-image fa-2xl"></i>
+                        </td>
+                        <td>
+                            <dl>
+                                <dt class="text-primary">PlayStation 4</dt>
+                                <dd class="text-black-50">PlayStation 4 500GB Console(PS4)</dd>
+                            </dl>
+                        </td>
+                        <td align="center" style="vertical-align: middle;">
+                        	<span class="badge bg-success">$1800</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center"><a href="#">View All Products</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div> 
+    
+    <!-- Side-navigation script -->
+    <script>
+        var menu_btn = document.querySelector("#menu-btn")
+        var sidebar = document.querySelector("#sidebar")
+        var container = document.querySelector(".my-container")
+        menu_btn.addEventListener("click", () => {
+            sidebar.classList.toggle("active-nav")
+            container.classList.toggle("active-cont")
+        });
+        
+        document.addEventListener("click", (event) => {
+            if (!sidebar.contains(event.target) && !menu_btn.contains(event.target)) {
+                if (sidebar.classList.contains("active-nav")) {
+                    sidebar.classList.remove("active-nav");
+                    container.classList.remove("active-cont");
+                }
+            }
+        });
+    </script>
+    <script>
         new Chart(document.getElementById("chartjs-doughnut"), {
             type: 'doughnut',
             data: {
@@ -661,18 +594,10 @@
                 radius: 100
             }
         });         
-</script>
-
-	<script src="https://kit.fontawesome.com/ce4cad5060.js"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-		crossorigin="anonymous"></script>
-
+    </script>
+    <script src="https://kit.fontawesome.com/ce4cad5060.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
+
 </html>
