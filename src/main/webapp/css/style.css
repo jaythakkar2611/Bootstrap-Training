@@ -33,7 +33,6 @@
 .dropdown-item:hover {
 	background-color: var(gray);
 }
-
 .my-container {
 	transition: 0.4s;
 }
