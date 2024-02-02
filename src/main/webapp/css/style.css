@@ -5,13 +5,12 @@
 }
 
 :root {
-	black: #000000;
-	gray: #808080;
 	--head-color:#3B71CA; 
 	--dark-warning:#EEAD17;
 	--dark-success:	#023020;
 	--dark-danger: darkred;
 	--dark-primary: #42A5F5;
+	--dark-green: #22aa2b;
 }
 
 .avatar {
@@ -45,15 +44,6 @@
 
 .active-cont {
 	margin-left: 15.625rem;
-}
-
-#menu-btn {
-	background-color: var(black);
-	color: #fff;
-}
-
-#menu-btn:focus {
-	box-shadow: 0 0 0 0.15625rem #7952b344;
 }
 
 .topnav-right {
@@ -125,6 +115,9 @@ font-weight: 900;
 .messagecolor{
 	background-color: var(--dark-primary);
 }
+.onlinecolor{
+	color: var(--dark-green);
+}
 .maxWidth{
 	width: 365px;
 }
@@ -136,4 +129,11 @@ font-weight: 900;
 	margin: -10px; 
 	box-shadow: 0 0 0 0; 
 	background-color: transparent;
+}
+.navImg{
+	text-decoration: none; 
+	margin-left: 0.625rem;
+}
+.chatHeight{
+	max-height: 260px;
 }
