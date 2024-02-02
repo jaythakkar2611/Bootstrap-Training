@@ -10,37 +10,46 @@
     <script src="https://kit.fontawesome.com/ce4cad5060.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="CSS/style1.css">
     <title>Welcome Admin</title>
 </head>
 
-<body>
+<body class="bg-light">
    
     <!-- This code is for side-navigation bar -->
-    <nav class="navbar navbar-expand d-flex flex-column align-item-start bg-dark" id="sidebar">
-        
-            <h3 class="container-fluid font-weight-bold text-light justify-content-center position-relative text-center">AdminLTE</h3>
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start bg-dark zi1" id="sidebar">
+        <div class="container-fluid  justify-content-center adminst headcolor">
+            <h3 class="font-weight-bold text-light justify-content-center position-relative text-center ">AdminLTE</h3>
+        </div>
   
         <ul class="navbar-nav d-flex flex-column mt-3 w-100">
             <li class="nav-item w-100 "> 
-            	<img src="image/vk.jpg" alt="Avatar" class="avatar bg-light margin-left" > 
-            		<a href="#profile" style="color: #ffffff; text-decoration: none; margin-left: 0.625rem;">Alexander Pierce</a>
+            	<img src="image/vk.jpg" alt="Avatar" class="bg-light margin-left rounded-circle direct-chat-img mt-3" > 
+            		<a href="#profile" style="color: #ffffff; text-decoration: none; margin-left: 0.625rem;" class="fs-5">Alexander Pierce</a>
 				
             </li>
-            <li class="nav-item w-100 text-light ml-2.813" > 
-            	<i class="fa-solid fa-circle mx-4" style="color: #22aa2b;"></i>Online 
+            <li class="nav-item w-100 text-light ml-2.813 online px-5 mx-4" > 
+            	<span class="fontSize"><i class="fa-solid fa-circle p-1" style="color: #22aa2b;"></i>Online</span> 
             </li>
-            <li class="nav-item dropdown w-100">
-            	<a href="#" class="nav-link dropdown-toggle text-light pl-4" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dashboard</a>
-                <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-                    <li> <a href="#" class="dropdown-item text-light pl-4 p-2">Dashboard 1</a> </li>
-                    <li> <a href="#" class="dropdown-item text-light pl-4 p-2">Dashboard 2</a> </li>
-                </ul>
+         
+            <li class=" dropdown nav-item w-100">
+            	<br>
+            	<h2 class="accordion-header">
+					<button class="accordion-button collapsed text-white thumbnail" style="margin: -10px; box-shadow: 0 0 0 0; background-color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        				<i class="fa-solid fa-gauge text-white px-3" aria-hidden="true"></i>Dashboard
+					</button>
+				</h2>
+ 				<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+    				<div class="accordion-body">
+        				<a href="#" class=" text-light pl-4 p-2 thumbnail"><i class="fa-solid fa-o text-white px-3" aria-hidden="true"></i>Dashboard 1</a>
+        				<a href="#" class=" text-light pl-4 p-2 thumbnail"><i class="fa-solid fa-o text-white px-3" aria-hidden="true"></i>Dashboard 2</a>
+     				</div>
+ 				</div>
             </li>
-            <li class="nav-item w-100"> <a href="#" class="nav-link text-light pl-4">Layout Options</a> </li>
-            <li class="nav-item w-100"> <a href="#" class="nav-link text-light pl-4">Widget</a> </li>
-            <li class="nav-item w-100"> <a href="#" class="nav-link text-light pl-4">Charts</a> </li>
-            <li class="nav-item w-100"> <a href="#" class="nav-link text-light pl-4">UI Elements</a> </li>
+            <li class="nav-item w-100"> <a href="#" class="nav-link text-light pl-4 thumbnail"><i class="fa fa-files-o px-3"></i>Layout Options<span class="badge bg-primary float-end">4</span></a></li>
+            <li class="nav-item w-100"> <a href="#" class="nav-link text-light pl-4 thumbnail"><i class="fa fa-th px-3"></i>Widget<span class="badge bg-success float-end">new</span></a> </li>
+            <li class="nav-item w-100"> <a href="#" class="nav-link text-light pl-4 thumbnail"><i class="fa fa-pie-chart px-3"></i>Charts<i class="fa-solid fa-angle-left text-white-50 float-end mt-1"></i></a></li>
+            <li class="nav-item w-100"> <a href="#" class="nav-link text-light pl-4 thumbnail"><i class="fa fa-laptop px-3"></i>UI Elements<i class="fa-solid fa-angle-left text-white-50 float-end mt-1"></i></a> </li>
         </ul>
     </nav> 
     
@@ -58,7 +67,7 @@
             <div class="col-6 mt-2 p-2"> 
             	<div >
             		<a href="#setting" class="mr-3">
-	            		<i class="fa-solid fa-gear text-white p-1 px-2 float-end"></i>
+	            		<i class="fa-solid fa-gear text-white p-1 px-3 float-end"></i>
 	            	</a>
 	            	<a href="#profile" class="text-white mr-3 px-2 text-decoration-none float-end">Alexander Pierce</a> 
 	            	<img src="image/vk.jpg" alt="Avatar" class="avatar bg-light float-end">
@@ -81,67 +90,79 @@
     </div> 
     
     <!-- This code is for Dashboard container -->
-    <div class="container-fluid bg-light float-end px-3 p-3">
+    <div class="container-fluid bg-light float-end p-1 mx-1">
     	<div>
-    		<h4 class="float-start">
+    		<h3 class="float-start mx-2 p-1">
   				Dashboard
-  				<small class="text-black-50">Version 2.0</small>
-			</h4>
+  				<small class="text-black-50 p-2 fs-5">Version 2.0</small>
+			</h3>
 			
-			<span class="float-end"><i class="fa-solid fa-gauge px-1"></i><strong>Home ></strong> Dashboard</span>
+			<span class="float-end mx-2 p-2"><i class="fa-solid fa-gauge px-1"></i><strong>Home ></strong> Dashboard</span>
     	</div>
-        <br>
-        <br>
-        <div class="container-fluid bg-light">
-            <div class="row gx-5">
-                <div class="col-md">
-                    <div class="border bg-white"> 
-                    	<img alt="" src="image/setting.svg" class="w-25 h-25">
-                    	<strong>CPU TRAFFIC 90%</strong> 
-                    </div>
+     </div>
+        
+     <div class="container-fluid bg-light">
+         <div class="row gx-5">
+             <div class="col-md">
+                 <div class="container-fluid-md border bg-white"> 
+                 	<img alt="" src="image/gear.svg" class="w-25 h-25">              
+                    <div class="container d-inline px-0 mx-2 position-absolute w-auto h-auto zi0">
+                    	<span class="m-1 fs-6">CPU TRAFFIC</span><br>
+                    	<strong class="m-1 fs-5">90%</strong>
+                   	</div>
+                  </div>
+             </div>
+             <div class="col-md">
+             	<div class="container-fluid-md border bg-white"> 
+                    <img alt="" src="image/googleplus.svg" class="w-25 h-25">              
+                   	<div class="container d-inline px-0 mx-2 position-absolute w-auto h-auto">
+                   		<span class="m-1 fs-6">LIKES</span><br>
+                   		<strong class="m-1 fs-5">41,410</strong>
+                   	</div>
                 </div>
-                <div class="col-md">
-                    <div class="border bg-white"> 
-                    	<img alt="" src="image/Capture.svg"  class="w-25 h-25">
-                    	<strong> LIKES 41,410</strong> 
-                    </div>
+             </div>
+             <div class="col-md">
+             	<div class="container-fluid-md border bg-white"> 
+                   	<img alt="" src="image/cartnew.svg" class="w-25 h-25">              
+                   	<div class="container d-inline px-0 mx-2 position-absolute w-auto h-auto">
+                  		<span class="m-1 fs-6">SALES</span><br>
+                   		<strong class="m-1 fs-5">760</strong>
+                   	</div>
                 </div>
-                <div class="col-md">
-                    <div class="border bg-white"> 
-                    	<img alt="" src="image/cart.svg" class="w-25 h-25">
-                    	<strong> SALES 760</strong> 
-                    </div>
+             </div>
+             <div class="col-md boxMr">
+             	<div class="container-fluid-md border bg-white"> 
+          	    	<img alt="" src="image/people.svg" class="w-25 h-25">              
+                   	<div class="container d-inline px-0 mx-2 position-absolute w-auto h-auto">
+                   		<span class="m-1 fs-6">NEW MEMBERS</span><br>
+                   		<strong class="m-1 fs-5">2,000</strong>
+                   	</div>
                 </div>
-                <div class="col-md">
-                    <div class="border bg-white"> 
-                    	<img alt="" src="image/users.svg" class="w-25 h-25">
-                   	 	<strong>NEW MEMBERS 2,000</strong> 
-                    </div>
-                </div>
+             </div>
             </div>
         </div>
-    </div>
+   
     
-    <div class="container-fluid p-2 bg-light float-end overflow-hidden column-gap">
+    <div class="container-fluid p-2 mt-3 bg-light float-end overflow-hidden column-gap">
         <div class="row gx-5">
             <!-- This code is for Direct chat -->
          	<div class="col-lg-4">
 				<div class="direct-chat border-top border-4 rounded border-warning">
 					<div class="container-fluid card-header bg-white border font-weight-bold d-inline-block">
 						
-						Direct Chat
+						<strong class="fs-4 text-black-50">Direct Chat</strong>
 						<section class="float-end">
 							<span class="badge bg-warning  rounded-pill align-items-center"><strong>3</strong></span>
-							<button type="button" class="btn btn-tool "
+							<button type="button" class="btn btn-tool p-0"
 								data-widget="collapse">
-								<i class="fas fa-minus"></i>
+								<i class="fas fa-minus text-black-50 "></i>
 							</button>
 							<button type="button" class="btn btn-tool " data-toggle="tooltip"
 								title="Contacts" data-widget="chat-pane-toggle">
-								<i class="fas fa-comments"></i>
+								<i class="fas fa-comments text-black-50"></i>
 							</button>
-							<button type="button" class="btn btn-tool " data-widget="remove">
-								<i class="fas fa-times"></i>
+							<button type="button" class="btn btn-tool p-2" data-widget="remove">
+								<i class="fa-solid fa-xmark text-black-50"></i>
 							</button>
 						</section>
 					</div>
@@ -150,49 +171,49 @@
 							style="max-height: 260px">
 							<div class="direct-chat-msg">
 								<div class="direct-chat-infos clearfix">
-									<span class="direct-chat-name float-left">Alexander
-										Pierce</span> <span class="direct-chat-timestamp float-end">23
+									<span class="direct-chat-name float-left"><strong>Alexander
+										Pierce</strong></span> <span class="direct-chat-timestamp float-end">23
 										Jan 2:00 pm</span>
 								</div>
-								<img class="avatar direct-chat-img float-start rounded-circle"
+								<img class="direct-chat-img float-start rounded-circle me-2"
 									src="image/alexander.svg" alt="message user image"> <span
-									class="rounded bg-light d-flex justify-content-center ml-5 mr-5 p-1">Is
+									class="rounded bg-light d-flex justify-content-center m-2 me-4 ms-3 p-2 mt-1">Is
 									this template really for free?</span>
 							</div>
 							<br>
 							<div class="direct-chat-msg right">
 								<div class="direct-chat-infos clearfix">
-									<span class="direct-chat-name float-right">Sarah Bullock</span>
-									<span class="direct-chat-timestamp float-end">23 Jan
+									<span class="direct-chat-name float-end"><strong>Sarah Bullock</strong></span>
+									<span class="direct-chat-timestamp float-start">23 Jan
 										2:05 pm</span>
 								</div>
-								<img class="avatar direct-chat-img float-end rounded-circle"
+								<img class="direct-chat-img float-end rounded-circle ms-2"
 									src="image/Sarah.svg" alt="message user image"> <span
-									class="rounded bg-warning d-flex justify-content-center ml-5 mr-5 p-1">You
+									class="rounded bg-warning d-flex justify-content-center m-2 mr-5 p-2 mt-1">You
 									better believe it!</span>
 							</div>
 							<br>
 							<div class="direct-chat-msg">
 								<div class="direct-chat-infos clearfix">
-									<span class="direct-chat-name float-left">Alexander
-										Pierce</span> <span class="direct-chat-timestamp float-end">23
+									<span class="direct-chat-name float-left"><strong>Alexander
+										Pierce</strong></span> <span class="direct-chat-timestamp float-end">23
 										Jan 5:37 pm</span>
 								</div>
-								<img class="avatar direct-chat-img float-start rounded-circle"
+								<img class="direct-chat-img float-start rounded-circle me-2"
 									src="image/alexander.svg" alt="message user image"> <span
-									class="rounded bg-light d-flex justify-content-center ml-5 mr-5 p-1">Working
+									class="rounded bg-light d-flex justify-content-center m-2 me-4 ms-3 p-2 mt-1">Working
 									with AdminLTE on a...!</span>
 							</div>
 							<br>
 							<div class="direct-chat-msg right">
 								<div class="direct-chat-infos clearfix">
-									<span class="direct-chat-name float-right">Sarah Bullock</span>
-									<span class="direct-chat-timestamp float-end">23 Jan
+									<span class="direct-chat-name float-end"><strong>Sarah Bullock</strong></span>
+									<span class="direct-chat-timestamp float-start">23 Jan
 										6:10 pm</span>
 								</div>
-								<img class="avatar direct-chat-img float-end rounded-circle"
+								<img class="direct-chat-img float-end rounded-circle ms-2"
 									src="image/Sarah.svg" alt="message user image"> <span
-									class="rounded bg-warning d-flex justify-content-center ml-5 mr-5 p-1">You
+									class="rounded bg-warning d-flex justify-content-center m-2 mr-5 p-2 mt-1">You
 									better believe it!</span>
 							</div>
 						</div>
@@ -200,10 +221,10 @@
 					<div
 						class="container-fluid card-header d-inline-block bg-white border">
 						<form action="#" method="post">
-							<div class="input-group-append d-flex">
+							<div class="border input-group-append d-flex">
 								<input type="text" name="message" placeholder="Type Message ..."
-									class="form-control">
-								<button type="button" class="btn btn-warning">Send</button>
+									class="form-control border-0">
+								<button type="button" class="btn btn-warning rounded-0">Send</button>
 							</div>
 						</form>
 					</div>
@@ -211,23 +232,20 @@
 			</div>
             
             <!-- This code is for Latest members -->
-            <div class="col-md-4 bg-white card-header border-top border-4 rounded border-danger">
-            	<div class="direct-chat">
-			    <div class="container-fluid card-header bg-white font-weight-bold d-inline-block">
+            <div class="col-md-4 bg-white card-header-pills px-3 border-top border-4 rounded border-danger">
+            	<div class="direct-chat card-header card-header-pills p-0 px-0 bg-white ">
+			    <div class="container-fluid bg-white font-weight-bold d-inline-block mb-2 mt-2 p-0">
 						
-						Latest Members
+						<strong class="fs-4 text-black-50">Latest Members</strong>
 						<section class="float-end">
 							<span class="badge bg-danger align-items-center">8 New Members</span>
 							<button type="button" class="btn btn-tool "
 								data-widget="collapse">
-								<i class="fas fa-minus"></i>
+								<i class="fas fa-minus text-black-50"></i>
 							</button>
-							<button type="button" class="btn btn-tool " data-toggle="tooltip"
-								title="Contacts" data-widget="chat-pane-toggle">
-								<i class="fas fa-comments"></i>
-							</button>
-							<button type="button" class="btn btn-tool " data-widget="remove">
-								<i class="fas fa-times"></i>
+							
+							<button type="button" class="btn btn-tool px-2" data-widget="remove">
+								<i class="fa-solid fa-xmark text-black-50"></i>
 							</button>
 						</section>
 					</div>
@@ -249,7 +267,7 @@
 			            </dl>
 			        </div>
 			        <div class="col-md-3">
-			            <img alt="" src="image/Norman.svg" class="rounded-circle img-fluid">
+			            <img alt="" src="image/Normann.svg" class="rounded-circle img-fluid">
 			            <dl class="text-center">
 			                <dt>Norman</dt>
 			                <dd class="text-black-50">Yesterday</dd>
@@ -287,8 +305,8 @@
 			                <dd class="text-black-50">15 Jan</dd>
 			            </dl>
 			        </div>
-			        <div class="card-footer p-0 bg-white text-primary text-center">
-			    		View All Users
+			        <div class="card-footer d-flex justify-content-center p-0 bg-white text-primary">
+			    		<span class="mt-2"> View All Users</span>
 			    	</div>
 			    </div>
 			    
@@ -299,64 +317,72 @@
             <div class="col-md-4 bg-light">
                 <div class="bg-white border-top border-4 border-dark">
                     <div class="pb p-2">
-                        <div class="card-header bg-white justify-content-center" style="height: 3.75rem;"> 
-                        	<strong class="text-black d-flex justify-content-center">Goal Completion</strong> 
-                        </div> 
-                        <label class="mt-3">
-                        	<strong class="text-black">Add Product To Cart</strong>
-                        </label> 
-                        <label class="float-end mt-3">
-                        	<strong>160/200</strong> 
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" style="width: 70%"></div>
-                        </div> 
-                        <br> <br> 
-                        <label>
-                        	<strong class="text-black">Complete Purchase</strong>
-                        </label> 
-                        <label class="float-end">
-                        	<strong>310/400</strong> 
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" style="width: 70%"></div>
-                        </div> 
-                        <br> <br> 
-                        <label>
-                        	<strong class="text-black">Visit Premium Page </strong>
-                        </label> 
-                        <label class="float-end">
-                        	<strong>480/800</strong> 
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" style="width: 70%"></div>
-                        </div> 
-                        <br> <br> 
-                        <label>
-                        	<strong class="text-black">Send Inquires</strong>
-                        </label> 
-                        <label class="float-end">
-                        	<strong>250/500</strong> 
-                        </label>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" style="width: 70%"></div>
+                        <div class="card-header bg-white justify-content-center"> 
+                        	<strong class="text-black d-flex justify-content-center mb-3">Goal Completion</strong> 
                         </div>
-                        <div class="card-footer bg-white" style="height: 2.063rem;"></div>
+                        <div>
+                        	<label class="mt-3">
+                        		<strong class="text-black">Add Product To Cart</strong>
+                        	</label> 
+	                        <label class="float-end mt-3">
+	                        	<strong>160/200</strong> 
+	                        </label>
+	                        <div class="progress">
+	                            <div class="progress-bar bg-primary" style="width: 70%"></div>
+	                        </div> 
+                        </div>
+                        <br> <br>
+                        <div>
+                        	<label>
+                        		<strong class="text-black">Complete Purchase</strong>
+                        	</label> 
+	                        <label class="float-end">
+	                        	<strong>310/400</strong> 
+	                        </label>
+	                        <div class="progress">
+	                            <div class="progress-bar bg-danger" style="width: 70%"></div>
+	                        </div>
+                        </div>                          
+                        <br> <br> 
+                        <div>
+                        	<label>
+                        		<strong class="text-black">Visit Premium Page </strong>
+                        	</label> 
+	                        <label class="float-end">
+	                        	<strong>480/800</strong> 
+	                        </label>
+	                        <div class="progress">
+	                            <div class="progress-bar bg-success" style="width: 70%"></div>
+	                        </div>
+                        </div>                         
+                        <br> <br> 
+                        <div>
+                        	<label>
+                        		<strong class="text-black">Send Inquires</strong>
+                        	</label> 
+	                        <label class="float-end">
+	                        	<strong>250/500</strong> 
+	                        </label>
+	                        <div class="progress">
+	                            <div class="progress-bar bg-warning" style="width: 70%"></div>
+	                        </div>
+                        </div>                       
+                        <div class="mb-4 bg-white"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
-    <div class="container-fluid px-3 p-3 bg-light float-end row ">
+    <div class="container-fluid bg-light mx-2 row ">
         <!-- This code is for table -->
         <div class="col-md-8">
-            <div class="container mt-3 bg-white border-top border-4 rounded border-primary" style="height: 29.375rem;">
+            <div class="container-fluid-md mt-3 tblMargin bg-white border-top border-4 rounded border-primary ">
                 <table class="table ">
                     <thead>
                         <tr>
                             <td colspan="3">
-                                <h2>Latest Orders</h2>
+                                <h4 class="text-muted">Latest Orders</h4>
                             </td>
                             <td align="right"> 
                             	<button type="button" class="btn btn-box-tool" data-widget="collapse"> 
@@ -422,7 +448,7 @@
                         </tr>
                         <tr>
                             <td class="text-primary">OR7429</td>
-                            <td>iphone 6 Plus</td>
+                            <td>iPhone 6 Plus</td>
                             <td><kbd class="bg-danger">Delivered</kbd></td>
                             <td>
                             	<i class="fa-solid fa-chart-simple fa-2xl text-danger"></i>
@@ -439,11 +465,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="3">
-                            	<button class="btn-primary float-start" type="button">Place New Order</button>
+                            <td colspan="3" class="p-3">
+                            	<button class="btn-primary p-2 float-start" type="button">Place New Order</button>
                             </td>
-                            <td align="right"> 
-                            	<button class="btn-light float-end" type="button">View All Orders</button> 
+                            <td align="right" class="p-3"> 
+                            	<button class="btn-light p-2 float-end" type="button">View All Orders</button> 
                             </td>
                         </tr>
                     </tbody>
@@ -453,67 +479,99 @@
         
         <!-- This code is for cards -->
         <div class="col-md-4">
-            <div class="contaier mt-3 bg-light">
-                <div class="row gx-1 bg-warning">
-                    <div class="col-3">
-                        <div class="border bg-orange-600 d-flex align-items-center justify-content-center float-start h-100 w-100"> 
-                        	<i class="fa-solid fa-tag fa-flip-horizontal fa-2xl bg-$orange-600 text-white"></i> 
-                        </div>
+            <div class="contaier-md mt-3 bg-light">
+                <div class="row gx-1 bg-warning mb-2">
+                    <div class="col-md-3">
+                        <div class="p-0 m-0 d-flex align-items-center justify-content-center float-start h-100 w-100 pricecolor">
+							<svg class="h-75" fill="#ffffff" width="168px" height="168px"
+								viewBox="0 0 24.00 24.00" xmlns="http://www.w3.org/2000/svg"
+								transform="matrix(-1, 0, 0, 1, 0, 0)" stroke="#ffffff"
+								stroke-width="0.00024000000000000003">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+									stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier"> <path
+									d="M3,5.5 C3,4.11928813 4.11928813,3 5.5,3 L11.5,3 C11.6326082,3 11.7597852,3.05267842 11.8535534,3.14644661 L20.1564971,11.4493903 C21.2890176,12.5819108 21.2890176,14.4180892 20.1564971,15.5506097 L15.5506097,20.1564971 C14.4180892,21.2890176 12.5819108,21.2890176 11.4493903,20.1564971 L3.14644661,11.8535534 C3.05267842,11.7597852 3,11.6326082 3,11.5 L3,5.5 Z M11.2928932,4 L5.5,4 C4.67157288,4 4,4.67157288 4,5.5 L4,11.2928932 L12.1564971,19.4493903 C12.8984933,20.1913865 14.1015067,20.1913865 14.8435029,19.4493903 L19.4493903,14.8435029 C20.1913865,14.1015067 20.1913865,12.8984933 19.4493903,12.1564971 L11.2928932,4 Z M8,7 C7.44771525,7 7,7.44771525 7,8 C7,8.55228475 7.44771525,9 8,9 C8.55228475,9 9,8.55228475 9,8 C9,7.44771525 8.55228475,7 8,7 Z M8,6 C9.1045695,6 10,6.8954305 10,8 C10,9.1045695 9.1045695,10 8,10 C6.8954305,10 6,9.1045695 6,8 C6,6.8954305 6.8954305,6 8,6 Z"></path> </g></svg>
+						</div>
                     </div>
-                    <div class="col-9">
-                        <h6 class="text-white">INVENTORY</h6>
-                        <h5> <strong class="text-white">5,200</strong> </h5>
+                    <div class="col-9 p-2 px-0">
+                        <h6 class="text-white ms-2">INVENTORY</h6>
+                        <h5> <strong class="text-white ms-2">5,200</strong> </h5>
                         <div class="progress bg-dark" style="height: 0.200rem">
                             <div class="progress-bar bg-white" style="width: 50%"></div>
                         </div>
-                        <h6 class="text-white mt-2">50% Increase in 30 Days</h6>
+                        <h6 class="text-white mt-2 ms-2">50% Increase in 30 Days</h6>
                     </div>
                 </div> 
-                <br>
-                <div class="row gx-1 bg-success">
+                
+                <div class="row gx-1 bg-success mb-2">
                     <div class="col-md-3">
-                        <div class="border bg-$orange-600 d-flex align-items-center justify-content-center h-100 w-100"> 
-                        	<i class="fa-regular fa-heart fa-2xl" style="color: #ffffff;"></i> 
-                        </div>
+                        <div class="p-0 m-0 d-flex align-items-center justify-content-center h-100 w-100 mentioncolor">
+							<svg class="h-75" viewBox="0 0 25.00 25.00" fill="none"
+								xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+									stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier"> <path
+									d="M15.6001 3.91998C14.268 3.92397 12.9849 4.42297 12 5.32001C11.2277 4.61746 10.2676 4.15485 9.23679 3.98858C8.20602 3.82231 7.1491 3.95955 6.19498 4.3836C5.24087 4.80765 4.43081 5.50018 3.8635 6.37671C3.29619 7.25324 2.99614 8.27591 3.00004 9.32C3.00004 15.77 12 20.14 12 20.14C12 20.14 21 15.77 21 9.32C21 7.88784 20.4311 6.51434 19.4184 5.50165C18.4057 4.48895 17.0322 3.91998 15.6001 3.91998Z"
+									stroke="#ffffff" stroke-width="0.475" stroke-linecap="round"
+									stroke-linejoin="round"></path> </g></svg>
+						</div>
                     </div>
-                    <div class="col-md-9">
-                        <h6 class="text-white">MENTIONS</h6>
-                        <h5> <strong class="text-white">92,050</strong> </h5>
+                    <div class="col-9 p-2 px-0">
+                        <h6 class="text-white ms-2">MENTIONS</h6>
+                        <h5> <strong class="text-white ms-2">92,050</strong> </h5>
                         <div class="progress bg-dark" style="height:  0.200rem">
                             <div class="progress-bar bg-white" style="width: 20%"></div>
                         </div>
-                        <h6 class="text-white mt-2">20% Increase in 30 Days</h6>
+                        <h6 class="text-white mt-2 ms-2">20% Increase in 30 Days</h6>
                     </div>
-                </div> <br>
-                <div class="row gx-1 bg-danger">
+                </div>
+                <div class="row gx-1 bg-danger mb-2">
                     <div class="col-md-3">
-                        <div class="border bg-$orange-600 d-flex align-items-center justify-content-center h-100 w-100"> 
-                        	<i class="fa-solid fa-cloud-arrow-down fa-2xl" style="color: #f5f7fa;"></i> 
-                        </div>
+                        <div class="p-0 m-0 d-flex align-items-center justify-content-center h-100 w-100 downloadcolor">
+							<svg class="h-50" viewBox="0 0 32.00 32.00" version="1.1"
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff"
+								stroke="#ffffff" stroke-width="0.00032">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+									stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier"> <g id="icomoon-ignore"> </g> <path
+									d="M20.050 25.363l0.756 0.756-4.775 4.775-4.775-4.775 0.756-0.756 3.488 3.488v-13.956h1.063v13.956l3.488-3.488zM26.175 9.569c0-0.088 0.012-0.169 0.012-0.25 0-4.569-3.7-8.269-8.262-8.269-3.287 0-6.119 1.925-7.45 4.706-0.575-0.287-1.225-0.456-1.912-0.456-2.112 0-3.862 1.537-4.2 3.55-2.513 0.863-4.325 3.244-4.325 6.050 0 3.531 2.862 6.394 6.394 6.394h6.938v-1.069h-6.938c-2.938 0-5.325-2.394-5.325-5.331 0-2.275 1.45-4.3 3.606-5.044l0.6-0.206 0.106-0.625c0.263-1.544 1.587-2.662 3.15-2.662 0.5 0 0.981 0.119 1.431 0.344l0.975 0.487 0.469-0.981c1.194-2.494 3.738-4.1 6.488-4.1 3.962 0.013 7.194 3.237 7.194 7.206 0 0.019 0 0.044-0.006 0.069-0.006 0.050-0.006 0.106-0.006 0.162l-0.025 1.088 1.087 0.006c2.637 0.006 4.788 2.162 4.788 4.8 0 2.631-2.144 4.781-4.775 4.794h-7.494v1.069h7.494c3.225-0.019 5.837-2.637 5.837-5.863 0-3.238-2.619-5.863-5.85-5.869z"
+									fill="#ffffff"> </path> </g></svg>
+						</div>
                     </div>
-                    <div class="col-md-9">
-                        <h6 class="text-white">DOWNLOADS</h6>
-                        <h5> <strong class="text-white">114,381</strong> </h5>
+                    <div class="col-9 p-2 px-0">
+                        <h6 class="text-white ms-2">DOWNLOADS</h6>
+                        <h5> <strong class="text-white ms-2">114,381</strong> </h5>
                         <div class="progress bg-dark" style="height:  0.200rem">
                             <div class="progress-bar bg-white" style="width: 70%"></div>
                         </div>
-                        <h6 class="text-white mt-2">70% Increase in 30 Days</h6>
+                        <h6 class="text-white mt-2 ms-2">70% Increase in 30 Days</h6>
                     </div>
                 </div> 
-                <br>
+                
                 <div class="row gx-1 bg-primary">
                     <div class="col-md-3">
-                        <div class="border bg-$orange-600 d-flex align-items-center justify-content-center h-100 w-100"> 
-                        	<i class="fa-regular fa-comment fa-2xl" style="color: #fafafa;"></i> 
-                        </div>
+                        <div class="p-0 m-0 d-flex align-items-center justify-content-center h-100 w-100 messagecolor">
+							<svg class="h-50" fill="#ffffff" viewBox="0 0 32 32"
+								version="1.1" xmlns="http://www.w3.org/2000/svg"
+								stroke="#ffffff" stroke-width="0.00032" transform="rotate(0)">
+								<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+								<g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+									stroke-linejoin="round"></g>
+								<g id="SVGRepo_iconCarrier"> <title>comment</title> <path
+									d="M16.5 2.353c-7.857 0-14.25 5.438-14.25 12.124 0.044 2.834 1.15 5.402 2.938 7.33l-0.006-0.007c-0.597 2.605-1.907 4.844-3.712 6.569l-0.005 0.005c-0.132 0.135-0.214 0.32-0.214 0.525 0 0.414 0.336 0.75 0.75 0.751h0c0.054-0 0.107-0.006 0.158-0.017l-0.005 0.001c3.47-0.559 6.546-1.94 9.119-3.936l-0.045 0.034c1.569 0.552 3.378 0.871 5.262 0.871 0.004 0 0.009 0 0.013 0h-0.001c7.857 0 14.25-5.439 14.25-12.125s-6.393-12.124-14.25-12.124zM16.5 25.102c-0.016 0-0.035 0-0.054 0-1.832 0-3.586-0.332-5.205-0.94l0.102 0.034c-0.058-0.018-0.126-0.029-0.195-0.030h-0.001c-0.020-0.002-0.036-0.009-0.056-0.009 0 0-0 0-0 0-0.185 0-0.354 0.068-0.485 0.18l0.001-0.001c-0.010 0.008-0.024 0.004-0.034 0.013-1.797 1.519-3.97 2.653-6.357 3.243l-0.108 0.023c1.29-1.633 2.215-3.613 2.619-5.777l0.013-0.083c0-0.006 0-0.014 0-0.021 0-0.021-0.001-0.043-0.003-0.064l0 0.003c0-0.005 0-0.010 0-0.015 0-0.019-0.001-0.037-0.002-0.055l0 0.002c-0.004-0.181-0.073-0.345-0.184-0.47l0.001 0.001-0.011-0.027c-1.704-1.697-2.767-4.038-2.791-6.626l-0-0.005c0-5.858 5.72-10.624 12.75-10.624s12.75 4.766 12.75 10.624c0 5.859-5.719 10.625-12.75 10.625z"></path> </g></svg>
+						</div>
                     </div>
-                    <div class="col-md-9">
-                        <h6 class="text-white">DIRECT MESSAGES</h6>
-                        <h5> <strong class="text-white">163,921</strong> </h5>
+                    <div class="col-9 p-2 px-0">
+                        <h6 class="text-white ms-2">DIRECT MESSAGES</h6>
+                        <h5> <strong class="text-white ms-2">163,921</strong> </h5>
                         <div class="progress bg-dark" style="height:  0.200rem">
                             <div class="progress-bar bg-white" style="width: 40%"></div>
                         </div>
-                        <h6 class="text-white mt-2">40% Increase in 30 Days</h6>
+                        <h6 class="text-white mt-2 ms-2">40% Increase in 30 Days</h6>
                     </div>
                 </div>
             </div>
@@ -522,105 +580,100 @@
     
     <!-- This code is for Doughnut chart -->
     <div class="container-fluid px-3 p-3 bg-light float-end row">
-        <div class="col-md-4 border bg-white">
-            <div class="row">
-                <div class="col-md-8 "> 
-                	<canvas id="chartjs-doughnut"></canvas> 
-                	<div class="container-fluid card-header d-inline-block bg-white border">
-							United States of America<span class="float-end text-danger"><i class="fa fa-angle-down"></i> 12%</span>
-						</div>
-						<div class="container-fluid card-header d-inline-block bg-white border">
-							India<span class="float-end text-success"><i class="fa fa-angle-up"></i> 4%</span>
-						</div>
-						<div class="container-fluid card-header d-inline-block bg-white border">
-							China<span class="float-end text-warning"> <i class="fa fa-angle-left"></i> 0%</span>
-						</div>
-                </div>
-                <div class="col-md-4"></div>
-            </div>
-        </div>
-        <div class="col-md-4"></div> 
-        
+    <div class="col-md-4"></div>
+    <div class="col-md-4"></div> 
+       
         <!-- This code is for recently added product -->
-        <div class="col-md-4">
-            <div class="container mt-3 bg-white border-top border-4 rounded border-primary">
+        <div class="col-md-4 px-4">
+            <div class="container-fluid-md bg-white border-top border-4 rounded border-primary">
                 <table class="table">
                     <tr>
-                        <td colspan="2">
-                            <h4>Recently Added Products</h4>
+						<td colspan="2">
+							<div class="d-flex align-items-center justify-content-between">
+						    <h4 class="mb-0">Recently Added Products</h4>
+						        	<div>
+						            	<button type="button" class="btn btn-box-tool"> 
+						                    <i class="fa-solid fa-minus fa-sm"></i> 
+						                </button> 
+						                <button type="button" class="btn btn-box-tool"> 
+						                    <i class="fa-solid fa-times fa-sm"></i> 
+						                </button>
+						            </div>
+						     </div>
+						</td>
+					</tr>
+
+                    <tr>
+                        <td align="center" valign="top" width="80px;">
+				            <img alt="" src="image/empty.png" class="w-75 position-relative">
+				        </td>
+                        <td>                        
+                        	<span class="text-primary"><strong>Samsung TV</strong></span>
+                        	<span class="badge bg-warning mb-5 float-end">$1800</span><br>
+                        	<span class="text-black-50 text-truncate position-absolute maxWidth">Samsung 32" 1080p 60Hz LED Smart HDTV</span>                                                      
                         </td>
-                        <td> 
-                        	<button type="button" class="btn btn-box-tool"> 
-                        		<i class="fa-solid fa-minus fa-sm"></i> 
-                        	</button> 
-                        	<button type="button" class="btn btn-box-tool"> 
-                        		<i class="fa-solid fa-times fa-sm"></i> 
-                        	</button>
-                         </td>
+                       
                     </tr>
                     <tr>
-                        <td align="center" style="vertical-align: middle;">
-                        	<i class="fa-sharp fa-regular fa-image fa-2xl"></i>
-                        </td>
-                        <td>
-                            <dl>
-                                <dt class="text-primary">Samsung TV</dt>
-                                <dd class="text-black-50">Samsung 32" 1080p 60Hz LED ....</dd>
-                            </dl>
-                        </td>
-                        <td align="center" style="vertical-align: middle;">
-                        	<span class="badge bg-warning">$1800</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="center" style="vertical-align: middle;">
-                        	<i class="fa-sharp fa-regular fa-image fa-2xl"></i>
-                        </td>
-                        <td>
-                            <dl>
-                                <dt class="text-primary">Bicycle</dt>
-                                <dd class="text-black-50">26" Mangoos Dolomite Men's...</dd>
-                            </dl>
-                        </td>
-                        <td align="center" style="vertical-align: middle;">
-                        	<span class="badge bg-primary">$700</span>
+                        <td align="center" valign="top" width="80px;">
+				            <img alt="" src="image/empty.png" class="w-75 position-relative">
+				        </td>
+                        <td>                        
+                        	<span class="text-primary"><strong>Bicycle</strong></span>
+                        	<span class="badge bg-primary mb-5 float-end">$700</span><br>
+                        	<span class="text-black-50 text-truncate position-absolute maxWidth">26" Mangoose Dolomite Men's 7-Speed,Navy Blue and other colors</span>                                                      
                         </td>
                     </tr>
                     <tr>
-                        <td align="center" style="vertical-align: middle;">
-                        	<i class="fa-sharp fa-regular fa-image fa-2xl"></i>
-                        </td>
-                        <td>
-                            <dl>
-                                <dt class="text-primary">Xbox One</dt>
-                                <dd class="text-black-50">Xbox One Console Blundel with......</dd>
-                            </dl>
-                        </td>
-                        <td align="center" style="vertical-align: middle;">
-                        	<span class="badge bg-danger">$1800</span>
+                        <td align="center" valign="top" width="80px;">
+				            <img alt="" src="image/empty.png" class="w-75 position-relative">
+				        </td>
+                        <td>  
+                        	
+                        	<span class="text-primary"><strong>Xbox One</strong></span>
+                        	<span class="badge bg-danger mb-5 float-end">$350</span><br>	
+      				     	<span class="text-black-50 text-truncate position-absolute maxWidth">Xbox One console Bundle with Halo master and many more</span>                                                      
                         </td>
                     </tr>
                     <tr>
-                        <td align="center" style="vertical-align: middle;">
-                       		<i class="fa-sharp fa-regular fa-image fa-2xl"></i>
-                        </td>
-                        <td>
-                            <dl>
-                                <dt class="text-primary">PlayStation 4</dt>
-                                <dd class="text-black-50">PlayStation 4 500GB Console(PS4)</dd>
-                            </dl>
-                        </td>
-                        <td align="center" style="vertical-align: middle;">
-                        	<span class="badge bg-success">$1800</span>
+                        <td align="center" valign="top" width="80px;">
+				            <img alt="" src="image/empty.png" class="w-75 position-relative">
+				        </td>
+                        <td>                        
+                        	<span class="text-primary"><strong>PlayStation 4</strong></span>
+                        	<span class="badge bg-success mb-5 float-end">$399</span><br>
+                        	<span class="text-black-50 text-truncate position-absolute maxWidth">PlayStation 4 500GB Console(PS4)</span>                                                      
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="3" align="center"><a href="#">View All Products</a></td>
+                        <td colspan="2" align="center" class="p-3" ><a href="#" class="text-decoration-none">View All Products</a></td>
                     </tr>
                 </table>
             </div>
         </div>
     </div> 
+    
+    <!-- This code is for Doughnut chart -->
+    <div class="container-fluid  bg-light float-end row">
+    	<div class="col-md-4"></div>
+ 		<div class="col-md-4"></div>
+       	<div class="col-md-4 border bg-white">           
+            <div>               
+               <canvas id="chartjs-doughnut"></canvas> 
+                	<div class="container-fluid card-header d-inline-block bg-white border">
+						United States of America<span class="float-end text-danger"><i class="fa fa-angle-down"></i> 12%</span>
+					</div>
+					<div class="container-fluid card-header d-inline-block bg-white border">
+						India<span class="float-end text-success"><i class="fa fa-angle-up"></i> 4%</span>
+					</div>
+					<div class="container-fluid card-header d-inline-block bg-white border">
+						China<span class="float-end text-warning"> <i class="fa fa-angle-left"></i> 0%</span>
+					</div>
+            </div>
+               
+            </div>
+        </div>
+ 		</div>
     
     <!-- Side-navigation script -->
     <script>
