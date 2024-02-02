@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--head-color:#3B71CA; 
+	--dark-warning:#EEAD17;
+	--dark-success:	#023020;
+	--dark-danger: darkred;
+	--dark-primary: #42A5F5;
+	--dark-green: #22aa2b;
+}
+
+.avatar {
+	vertical-align: middle;
+	width: 1.875rem;
+	height: 1.875rem;
+	border-radius: 50%;
+}
+
+.navbar {
+	width: 15.625rem;
+	height: 100rem;
+	position: fixed;
+	margin-left: -18.75rem;
+	transition: 0.4s;
+}
+
+.dropdown-item:active, 
+.dropdown-item:focus, 
+.dropdown-item:hover {
+	background-color: var(gray);
+}
+.my-container {
+	transition: 0.4s;
+}
+
+.active-nav {
+	margin-left: 0;
+}
+
+.active-cont {
+	margin-left: 15.625rem;
+}
+
+.topnav-right {
+	margin-right: 0.625rem;
+}
+
+.margin-left {
+	margin-left: 0.625rem;
+}
+
+.ml-2.813 {
+	margin-left: 2.813rem
+}
+
+.column-gap{
+	column-gap: 1rem;
+}
+.ht-2.5{
+	height: 2.5rem
+}
+.direct-chat-img{
+	width: 48px;
+}
+.priceimg{
+	height: 6.75rem;
+	width: 7.75rem;
+}
+.zi0{
+	z-index: 0;
+}
+.zi1{
+	z-index: 1;
+}
+.adminst{
+	position: relative;
+    margin-top: -10px; 
+  	height: 55px;
+}
+.online{
+	margin-top: -18px;
+}
+.tblMargin{
+	position: relative;
+	margin-left: -32px;
+}
+.thumbnail:hover {
+background-color: transparent;
+opacity: 0.9;
+font-weight: 900;
+}
+.boxMr{
+	margin-right: 9px;
+}
+.fontSize{
+	font-size: small;
+}
+.headcolor{
+	background-color: var(--head-color);
+}
+.pricecolor{
+	background-color: var(--dark-warning);
+}
+.mentioncolor{
+	background-color: var(--dark-success);
+}
+.downloadcolor{
+	background-color: var(--dark-danger);
+}
+.messagecolor{
+	background-color: var(--dark-primary);
+}
+.onlinecolor{
+	color: var(--dark-green);
+}
+.maxWidth{
+	width: 365px;
+}
+
+.accordion-button::after{
+	 background-image: url(image/angle.svg);
+}
+.aeroBtn{
+	margin: -10px; 
+	box-shadow: 0 0 0 0; 
+	background-color: transparent;
+}
+.navImg{
+	text-decoration: none; 
+	margin-left: 0.625rem;
+}
+.chatHeight{
+	max-height: 260px;
+}
